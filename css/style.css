@@ -114,6 +114,9 @@ header nav li {
     position: relative;
 }
 
+.phototext {
+    width: 100%;
+}
 .slider .image {
     float: left;
     width: 35%;
