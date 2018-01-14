@@ -7,7 +7,7 @@
 }
 
 .container {
-    max-width: 100%;
+    min-width: 1600px;
     margin: 0 auto;
     padding-left: 90px;
     padding-right: 90px;
@@ -96,7 +96,9 @@ header nav li {
 }
 
 /*S E C T I O N * 1*/
-
+.slider article {
+    width: 100%;
+}
 .slider .container {
     position: relative;
     height: 650px;
@@ -125,7 +127,7 @@ header nav li {
 
 .slider .text {
     float: left;
-    padding: 0 10%;
+    padding: 0 8%;
     width: 60%;
 }
 
@@ -197,7 +199,12 @@ header nav li {
 }
 
 /*S E C T I O N * 2*/
+.gallery .photosarticle {
+    width: 100%;
+    background-color: white;
+}
 .gallery .container {
+    padding-top: 50px;
     position: relative;
     height: 500px;
     background-color: white;
@@ -205,28 +212,22 @@ header nav li {
 
 .gallery .smallbox {
     float: left;
-    padding-top: 10px;
+    width: 33.33%
 }
 
 .gallery .article {
     height: 335px;
     border: #DEDEDE 1px solid;
-    margin: 50px 0;
-    margin-left: 45px;
-    width: 446px;
 }
 
 .gallery img {
-    padding-top: 50px;
     position: relative;
 }
 
-.gallery .second img{
-    margin-left: 40px;
-}
+
 
 .gallery .bar  {
-    width: 430px;
+    width: 33.33%;
     height: 80px;
     background-color: rgba(255,255,255, 0.5);
     z-index: 9999;
@@ -234,9 +235,7 @@ header nav li {
     top: 249px;
 }
 
-.gallery .second .bar{
-    margin-left: 40px;
-}
+
 
 .gallery h3 {
     margin-left: 20px;
