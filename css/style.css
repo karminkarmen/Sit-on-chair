@@ -116,14 +116,18 @@ header nav li {
 
 .slider .image {
     float: left;
-    width: 700px;
+    width: 35%;
     padding-top: 80px;
-    margin-left: -58px;
 }
 
 .slider .text {
     float: left;
-    width: 568px;
+    padding: 0 10%;
+    width: 60%;
+}
+
+.slider img {
+    margin-left: -12%;
 }
 
 .slider .text h1 {
@@ -160,7 +164,7 @@ header nav li {
     outline: 0;
     text-transform: uppercase;
     position: absolute;
-    margin: 0 125px;
+    left: calc(50% - 170px);
     font-size: 31px;
 }
 
@@ -170,12 +174,12 @@ header nav li {
 
 .right {
     position: absolute;
-    right: 0%;
+    right: 10%;
 }
 
 .left {
     position: absolute;
-    left: 0%;
+    left: 5%;
 }
 
 .arrow {
@@ -183,7 +187,7 @@ header nav li {
     color: #24BA9F;
     font-size: 100px;
     font-weight: 100;
-    padding: 274.5px 100px;
+    padding: 274.5px 0px;
     z-index: 99999;
     cursor: pointer;
 
