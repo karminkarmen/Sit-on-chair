@@ -39,6 +39,11 @@ a {
     text-decoration: none;
 }
 
+.prices .mainbox,
+.slider button {
+    transition: all 0.2s linear;
+}
+
 /* H E A D E R */
 header {
     width: 100%;
@@ -120,7 +125,6 @@ header nav li {
     float: left;
     width: 568px;
 }
-
 
 .slider .text h1 {
     text-align: center;
@@ -210,7 +214,6 @@ header nav li {
     position: relative;
 }
 
-
 .gallery .second img{
     margin-left: 40px;
 }
@@ -249,7 +252,6 @@ header nav li {
     text-transform: uppercase;
 }
 
-
 .gallery .article h3 {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -265,7 +267,7 @@ header nav li {
     font-size: 18px;
 }
 
-/*cennik*/
+/*S E C T I O N *3*/
 
 .prices {
     height: 900px;
@@ -300,8 +302,7 @@ header nav li {
 }
 
 .prices .maincircle,
-.prices .mainbox,
-.prices .pricecircle{
+.prices .mainbox{
     background-color: #F9F9F9;
     border: 2px solid #C2C2C2;
 }
@@ -353,6 +354,8 @@ header nav li {
     position: absolute;
     right: calc(50% - 85px);
     top: calc(50% - 50px);
+    background-color: white;
+    border: 2px solid #C2C2C2;
 }
 
 .prices button {
@@ -431,3 +434,40 @@ header nav li {
     width: 100%;
     height: 170px;
 }
+
+.prices .mainbox:hover .maincircle,
+.prices .mainbox:hover{
+    background-color: #27C7AB;
+    border: 2px solid #27C7AB;
+}
+
+.prices .mainbox:hover .pricecircle {
+    color: #27C7AB;
+    border: 2px solid #27C7AB;
+}
+
+.prices .mainbox:hover button {
+    color: #27C7AB;
+    background-color: white;
+}
+
+.prices .mainbox:hover .innercircle {
+    background-color: white;
+}
+
+.prices .mainbox:hover ul li:nth-of-type(2n) {
+    background-color: #F1F1F1;
+}
+
+.prices .mainbox:hover ul li:nth-of-type(2n+1) {
+    background-color: white;
+}
+
+.prices .mainbox:hover h3 {
+    color: white;
+}
+
+.prices .mainbox:hover .pricecircle p {
+    color: #27C7AB;
+}
+
