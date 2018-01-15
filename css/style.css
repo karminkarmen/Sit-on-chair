@@ -41,7 +41,8 @@ a {
 }
 
 .prices .mainbox,
-.slider button {
+.slider button,
+.form button{
     transition: all 0.2s linear;
 }
 
@@ -568,4 +569,8 @@ header nav li {
     left: calc(50% - 220px);
     bottom: 0px;
     font-size: 46px;
+}
+
+.form button:hover {
+    color: black;
 }
