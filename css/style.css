@@ -24,11 +24,11 @@ a:link {
 }
 
 a:visited {
-    /*color: inherit;*/
+    color: inherit;
 }
 
 a:hover {
-    /*color: inherit;*/
+    color: inherit;
 }
 
 a:active {
@@ -95,6 +95,79 @@ header nav li {
     padding-left: 60px;
     font-weight: bold;
 }
+
+header nav li a{
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+header nav li a:hover{
+    cursor: pointer;
+    color: #1CCCA8;
+}
+
+.withDropDownMenu:hover:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+.withDropDownMenu:hover .dropDownMenu {
+    display: block;
+}
+
+.dropDownMenu{
+    position: absolute;
+    top: -6px;
+    left: -48px;
+    width: 165px;
+    color: white;
+    line-height: 40px;
+    box-sizing: content-box;
+    padding: 60px;
+    display: none;
+    z-index: -9999;
+}
+
+.drop-down{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    display: block;
+    padding-left: 22px;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    background-color: black;
+    text-align: left;
+}
+
+.drop-down a {
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.drop-down a:hover{
+    cursor: pointer;
+    color: #1CCCA8;
+}
+
+.drop-down:first-child{
+    padding-top: 8px;
+}
+.drop-down:last-child{
+    padding-bottom: 8px;
+}
+
+
 
 /*S E C T I O N * 1*/
 .slider {
@@ -197,7 +270,7 @@ header nav li {
     padding: 274.5px 0px;
     z-index: 99999;
     cursor: pointer;
-
+    transition: all 0.2s linear;
 }
 
 /*S E C T I O N * 2*/
@@ -628,4 +701,8 @@ footer .media {
     top: 50%;
     left: 85%;
     transform: translate(-85%, -50%);
+}
+
+footer img {
+    margin: 5px;
 }
