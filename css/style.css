@@ -301,6 +301,7 @@ header .drop-down:last-child{
 
 .gallery img {
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -555,6 +556,10 @@ header .drop-down:last-child{
 
 .prices .mainbox:hover .pricecircle p {
     color: #27C7AB;
+}
+
+.prices .mainbox:hover {
+    cursor: pointer;
 }
 
 /* S E C T I O N * 4 */
