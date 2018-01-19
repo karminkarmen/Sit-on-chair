@@ -108,7 +108,7 @@ header nav li a:hover{
     color: #1CCCA8;
 }
 
-header .withDropDownMenu:hover:after{
+header .drop-down-menu:hover:after{
     content: "";
     width: 0;
     height: 0;
@@ -120,14 +120,14 @@ header .withDropDownMenu:hover:after{
     left: 80px;
 }
 
-header .withDropDownMenu:hover .dropDownMenu {
+header .drop-down-menu:hover .drop-down-menu-lis{
     display: block;
 
 }
-header .withDropDownMenu {
+header .drop-down-menu {
     transition: all 0.2s linear;
 }
-header .dropDownMenu{
+header .drop-down-menu-lis{
     position: fixed;
     top: -6px;
     left: -48px;
