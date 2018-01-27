@@ -49,6 +49,8 @@ a {
 header {
     width: 100%;
     background-color: black;
+    position:fixed;
+    z-index: 999999;
 }
 
 header .container {
@@ -287,6 +289,7 @@ header .drop-down:last-child{
     position: relative;
     height: 500px;
     background-color: white;
+    transition: all 0.2s linear;
 }
 
 .gallery .smallbox {
@@ -315,6 +318,18 @@ header .drop-down:last-child{
     top: 249px;
 }
 
+.gallery .first{
+    transition: all 0.2s linear;
+}
+
+.gallery .first:hover .bar1{
+    display: none;
+}
+
+
+.gallery .second:hover .bar2{
+    display: none;
+}
 
 
 .gallery h3 {
